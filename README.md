@@ -20,3 +20,9 @@ terraform apply
 #Modify the instances rule with the instance id we receievd earlier 
 terraform plan
 terraform apply
+#Once this is done for RDS setup we need to download the rds required modules from https://github.com/terraform-aws-modules/terraform-aws-rds/archive/v1.9.0.zip
+#We need to terraform init  for db_instance, db_parameter_group and db_subnet_group
+#Once this is initiated place the file rds.tf and edit the subnet portion with the subnets we receieved in the previouss step.
+#run final 
+terraform apply
+#Your RDS setup is done
